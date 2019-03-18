@@ -1,0 +1,38 @@
+form,
+input,
+button {
+  font-family: inherit;
+  font-size: 18px;
+}
+
+input,
+button {
+  display: block;
+  max-width: 256px;
+}
+
+button {
+  margin: 8px 0;
+  border: 0;
+  background: #369;
+  color: #fff;
+  border-radius: 4px;
+  padding: 8px 12px;
+}
+
+button:hover {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+input:focus,
+button:focus {
+  outline: 0;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+input {
+  margin: 8px 0;
+  border-radius: 4px;
+  border: 1px solid #369;
+  padding: 8px 12px;
+}

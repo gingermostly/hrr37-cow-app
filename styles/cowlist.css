@@ -1,0 +1,24 @@
+.cow-list {
+  border-collapse: collapse;
+  margin: 20px 0;
+  width: 500px;
+}
+
+.cow-list td,
+.cow-list th {
+  border: 1px solid #999;
+}
+
+.cow-list thead tr th:first-child {
+  border-top-left-radius: 4px;
+}
+
+.cow-list thead tr th:last-child {
+  border-top-right-radius: 4px;
+}
+
+
+.cow-list td,
+.cow-list th {
+  padding: 8px 12px;
+}
