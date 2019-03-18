@@ -9,19 +9,17 @@ class App extends React.Component {
     this.state = {
       cowData: []
     }
-    this.handleSubmit = this.handleSubmit.bind(this);
   }
-
-  handleSubmit(valOne, valTwo) {
-    this.setState({
-      cowData: [...this.state.cowData, {name: valOne, description: valTwo}]
-    });
+  componentDidMount() {
+    fetch('http://localhost:3000/cows')
+      .then(res => res.json())
+      .then(data => this.setState({ cowData: data.cows }))
   }
 
   render() {
     return (
       <div>
-        <Form onSubmit={this.handleSubmit} />
+        <Form />
         <CowList cows={this.state.cowData} />
       </div>
     )
